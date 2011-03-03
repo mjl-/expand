@@ -1,0 +1,31 @@
+# status
+
+usable.
+
+
+# intro
+
+expand (and unexpand with -u).  tab width can be set.  see manual
+page for the details.
+
+
+# install
+
+make sure $ROOT is set.  now "mk install" to compile and install the
+files.
+
+when building from within inferno, insert SYSHOST=Inferno and ROOT=
+in the mk invocations to override the values in the mkconfig.
+
+
+# latest version
+
+the latest version can be found at:
+
+    http://www.ueber.net/code/r/expand
+
+
+# licence & author
+
+all files are in the public domain.  this code has been written by
+mechiel lukkien, reachable at mechiel@ueber.net.

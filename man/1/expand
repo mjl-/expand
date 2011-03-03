@@ -1,0 +1,29 @@
+.TH EXPAND 1
+.SH NAME
+expand \- expand tabs into spaces or spaces into tabs
+.SH SYNOPSIS
+.B expand
+[
+.B -t
+.I tabwidth
+] [
+.B -u
+.RB [ -a ]
+]
+.SH DESCRIPTION
+.B Expand
+copies stdin to stdout, changing each tab into spaces up to the next tabstop.  If
+.B -u
+(for ``unexpand'') is given, each sequence of two or more spaces up to the next tab stop is changed into a tab.  For
+.BR -u ,
+only sequences at the start of each line are changed.  If
+.B -a
+is specified, sequences anywhere in a line will be replaced.
+Tab stops occur every 8 characters, or
+.I tabwidth
+characters as set with
+.BR -t .
+.SH SOURCE
+.B /appl/cmd/expand.b
+.SH SEE ALSO
+.IR fmt (1)
